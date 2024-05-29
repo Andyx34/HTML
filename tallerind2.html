@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a {
+        color:black;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: red;
+        cursor: pointer;
+    }
+    
+    a:visited {
+        color: purple;
+    }
+    .hover-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: green;
+}
+
+.hover-image {
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
+.hover-div {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.hover-div:hover {
+    background-color: gray;
+}
+input[type="text"]:focus {
+    border: 2px solid blue;
+}
+
+
+input[type="text"]:active {
+    background-color: lightyellow;
+}
+
+textarea {
+    cursor: text;
+    color: red;
+    
+}
+
+
+input[type="text"]::first-letter {
+    font-size: 1.2em;
+    color: blue;
+}
+.custom-list li::after {
+    content: " ➔";
+}
+
+
+.custom-list li::before {
+    content: "• ";
+    color: red;
+}
+
+.ordered-list li::before {
+    counter-increment: item;
+    content: counter(item) ". ";
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+    <a href="https://www.ejemplo.com">Enlace 1</a>
+    <a href="https://www.ejemplo.com">Enlace 2</a>
+    <a href="https://www.ejemplo.com">Enlace 3</a>
+    <button class="hover-button">Botón</button>
+    <img src="https://cdn.pixabay.com/photo/2024/02/26/19/39/monochrome-image-8598798_640.jpg" alt="Imagen" class="hover-image">
+    <div class="hover-div">ACEPTAR</div>
+    <input type="text" placeholder=" texto1">
+    <textarea placeholder="texto2"></textarea>
+
+    <ul class="custom-list">
+        <li>Pregunta 1</li>
+        <li>Pregunta 2</li>
+        <li>pregunta 3</li>
+    </ul>
+    <ol class="ordered-list">
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+    </ol>
+</body>
+</html>

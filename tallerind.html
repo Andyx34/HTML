@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: blue;
+        }
+        h2{
+            font-style: 24;
+        }
+        .destacado{
+            font-weight: bold;
+            background-color: yellow;
+        }
+        #miElemento{
+            font-style: italic;
+            border: red;
+        }
+        a[href="www.google.com"]{
+            color: aqua;
+        }
+        input[type="text"]{
+            border: solid black;
+            padding: 5px;
+            color: blue;
+        }
+        div li{
+            color: red;
+        }
+
+        p + p{
+            color: rgb(32, 161, 161);
+        }
+        div ~ p{
+            color: green;
+        }
+        *{
+            background-color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Solucion Taller</p>
+    <h2>Este es mi documento</h2>
+    <div class="destacado">Solucion Taller</div>
+    <div id="miElemento">Contenido del taller</div>
+    <a href="www.google.com">Google</a>
+    <input type="text">
+    
+    <h2>Conbinadores Descendientes</h2>
+    <div>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </div>
+
+    <h2>Combinador Hijo Directo</h2>
+    <div>
+        <p>Pregunta 1</p><br>
+        <p>Pregunta 2</p><br>
+        <p>Pregunta 3</p>
+    </div>
+
+    <h2>Combinador Elementos Adyacentes</h2>
+    <div>
+        <p>Pregunta 1</p>
+        <p>Pregunta 2</p>
+        <p>Pregunta 3</p>
+    </div>
+    
+    <h2>Combinador General de Hermanos</h2>
+        <p>Pregunta 1</p>
+        <p>Pregunta 2</p>
+        <p>Pregunta 3</p>
+
+</body>
+</html>
