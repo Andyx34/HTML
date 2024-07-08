@@ -4,36 +4,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         section{
             width: 100%;
             display: flex;
             justify-content: center;
+            
         }
         .card{
-            width: 200px;
-            height: 300px;
-            background-color: cornflowerblue;
-            border-radius: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: beige;
+            border-radius: 10px;
             overflow: hidden;
+         
+            
+        }
+        .title{
+            font-style: italic;
+            color: red;
+            font-size: 15px;
+            padding: 10px 10px 0 10px;
+
+        }
+    
+        .content{
+            width: 600px;
+            height: 100px;
+            text-align:center;    
+            
+        }
+        .content p{
+            width: 50%;
+            height: 40%;
+            font-size: 9px;
+            text-align:justify;  
+           
+            
+            
+
         }
         .card img{
             width: 100%;
             height: 70%;
+          
         }
         .card p{
             text-align: center;
+            font-style: italic;
+            
         }
-        .card p:nth-child(3){
-            color: deeppink;
-        }
+        
     </style>
 </head>
 <body>
     <section>
         <div class="card">
-            <img src="https://images.pexels.com/photos/3756602/pexels-photo-3756602.jpeg?auto=compress&cs=tinysrgb&w=400" >
-            <p>Dog</p>
-            <p>Tierno</p>
+            <div class="title">Valle del Cocora 🌴</div>
+            <img src="https://images.pexels.com/photos/2884864/pexels-photo-2884864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" >
+                <p>Salento,Quindio,Colombia </p>
+                    
+                       <div class="content">
+                        <p>En el municipio de Salento, al que 
+                            se llega luego de un viaje de 25
+                            km hacia el norte desde Armenia,
+                             se visita el valle del Cocora, 
+                            donde crece la palma de cera, el 
+                            árbol nacional, que puede llegar a medir
+                            60 m de altura. Este árbol es esencial
+                            para un ave muy vistosa, el loro orejiamarillo.</p>
+                        </div>
+        
+                    
+                
+             
+                
+            </div>
+           
         </div>
     </section>
 </body>
